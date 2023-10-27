@@ -53,7 +53,7 @@ def negative_button():
     current = entry_box.get()
     entry_box.delete(0, END)
     entry_box.insert(0, float(current) * -1)
-
+#Decimal Logic incomplete: adds aditional leading 0
 def decimal_button():
     commands.clear()
     current = entry_box.get()
