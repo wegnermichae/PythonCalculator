@@ -53,14 +53,14 @@ def negative_button():
     current = entry_box.get()
     entry_box.delete(0, END)
     entry_box.insert(0, float(current) * -1)
-#Decimal Logic incomplete: adds aditional leading 0
+
 def decimal_button():
     commands.clear()
     current = entry_box.get()
     if len(entry_box.get()) == 0:
         current = 0
     entry_box.delete(0, END)
-    entry_box.insert(0, float(current))
+    entry_box.insert(0, str(current) + str("."))
 
 def percent_button():
     commands.clear()
